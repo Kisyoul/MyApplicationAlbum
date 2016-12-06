@@ -8,10 +8,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.myapplicationalbum.MainActivity">
+    tools:context="com.example.android.myapplicationalbum.MainActivity"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/title"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView" />
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/HotMovie"
+        android:layout_below="@id/textView"
+        android:text="@string/Hotmovie"
+        android:onClick="OpenHotMovie"/>
+    <Button
+       style="@style/Button"
+        android:layout_below="@id/HotMovie"
+        android:text="@string/eagle"
+        android:id="@+id/Eagle"
+        android:onClick="OpenEagle"/>
+    <Button
+        style="@style/Button"
+        android:layout_below="@id/Eagle"
+        android:text="@string/reader"
+        android:id="@+id/Reader"
+        android:onClick="OpenReader"/>
+    <Button
+        style="@style/Button"
+        android:layout_below="@id/Reader"
+        android:text="@string/news"
+        android:id="@+id/News"
+        android:onClick="OpenNews"/>
+    <Button
+        style="@style/Button"
+        android:layout_below="@id/News"
+        android:text="@string/design"
+        android:id="@+id/Design"
+        android:onClick="OpenDesign"/>
+
+
+
+
+
 </RelativeLayout>
