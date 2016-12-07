@@ -50,7 +50,8 @@
         android:layout_below="@id/News"
         android:text="@string/design"
         android:id="@+id/Design"
-        android:onClick="OpenDesign"/>
+        android:onClick="OpenDesign"
+        android:clickable="true"/>
 
 
 
